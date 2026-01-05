@@ -15,3 +15,24 @@ Python is everywhere in AI
 
 First code - 
 print ("Hello World!")
+
+Types of data in computer programming
+- text
+- image
+- audio
+- tabular data
+
+Strings are used to store and manipulate text. Strings are written inside of quotes and can contain letters, numbers, punctuation marks, and other special characters
+
+If you use triple quotation marks, you can store a multiline string. These strings can span more than one line.
+
+Integers and Floats
+Integers represent numbers with no decimal part
+Floats have digits after the decimal place 
+
+In computer programming, variables are used to store, process, and manipulate data.
+What are variables for? 
+- Give a value a name to use later 
+- Use the same name to refer to changing values 
+
+
