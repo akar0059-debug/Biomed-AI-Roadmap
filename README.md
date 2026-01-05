@@ -1,4 +1,4 @@
-👋 Hi, I'm Aditi!
+#👋 Hi, I'm Aditi!
 Biomedical Scientist | Aspiring AI Engineer
 
 🎓 Honours Candidate: Comparing Neural Networks vs. LCNC Platforms in Healthcare. 🚀 Mission: Bridging the gap between biological research and production-ready AI systems. 
