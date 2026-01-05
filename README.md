@@ -28,11 +28,11 @@ I am a **Biomedical Science Honours** student bridging the gap between clinical 
 ---
 
 
-## 🧪 Current Projects and Learning Labs
+## 🧪 Current Projects 
 * **[Project Phase 1]**:
 * **[Project Phase 2]**:
 * **[Project Phase 3]**: 
-* ** Learning Lab - Biomed-AI-Roadmap**: A public repository documenting my transition from lab to code.
+
 
 ---
 
