@@ -12,18 +12,18 @@ I am a **Biomedical Science Honours** student bridging the gap between clinical 
 ## 🛠️ Tech Stack & Skills (Upcoming)
 | Category | Tools & Technologies |
 | :--- | :--- |
-| **Languages** | [Python] [SQL] |
-| **AI & Data** | ![Pandas] [Scikit-Learn] [PyTorch] |
+|**Languages** | ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![SQL](https://img.shields.io/badge/sql-CC2927?style=for-the-badge&logo=postgresql&logoColor=white) |
+| **AI & Data** | ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) |
 | **Cloud & DevOps** | ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) |
 | **Visualization** | ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white) ![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=microsoftpowerbi&logoColor=black) |
 
 ---
 
 ## 📈 My AI Roadmap (Started Dec 2025)
-- [x] **Phase 0: The Foundations** - Python Basics, SQL, and Data Wrangling.
-- [ ] **Phase 1: The Build** - Machine Learning models and Neural Network architecture.
-- [ ] **Phase 2: The Production** - Deploying models via FastAPI and AWS.
-- [ ] **Phase 3: The Portfolio** - Finalizing medical-AI case studies for Dubai market.
+- [x] **Phase 0: The Foundations** - Python Basics, SQL, Data Visualisation and Data Wrangling.
+- [ ] **Phase 1: Building & Fine Tuning AI Models** - Core Machine Learning, Deep Learning, LLMs and Multi-Modal Models.
+- [ ] **Phase 2: AI Production** - Data Engineering Basics, MLOps & Software Engineering, Serving & Infrastructure, Evaluation & Monitoring
+- [ ] **Phase 3: Fair AI** - Security, Responsible AI & Model Explainability 
 
 ---
 
