@@ -42,3 +42,200 @@ Functions allow to perform actions on data for specific tasks and provide (or re
 Module 2: Automating Tasks with Python
 
 Completing a task list with AI
+
+Python counts starting from zero rather than 1 
+Lists allow you to add, delete, retrive and edit elements 
+Lists allow you to store multiple pieces of data 
+
+for example- 
+friends_list=["Tommy", "Isabel", "Daniel"]
+friends_list - List name 
+= - assignment
+[] - brakets
+"Tommy", "Isabel", "Daniel" - list elements seperated by commas
+
+if we do type(friends_list) we find that it is a list
+len(friends_list) - length of a list so = 3 
+
+You can access individual elements from a list.
+first_friend = friends_list[0]
+print(first_friend) 
+
+replace 0 with 1,2, so on to obtain the friend based on list 
+
+print(friends_list[1]) # Output: Isabel
+
+if u ask for friend 3 wont appear as it is our of range so error 
+
+if you wann add another element to the list 
+# add single element to list
+friends_list.append("Otto")
+print(friends_list)
+
+if u wanna delete an element
+#using remove
+friends_list.remove("Tommy")
+print(friends_list)
+
+lists can also store numbers, integers 
+
+Repeating tasks with for loops 
+A for loop is a special code pattern found in many languages that allows you to repeatedly perform actions on all the items in a list in an automated way. 
+
+for task in list_of_tasks: print_llm_response(task) litr means print_llm_response(list_of_tasks[0]) + print_llm_response(list_of_tasks[1]) + print_llm_response(list_of_tasks[2])
+task - name you define for the element in each iteration
+colon - where is the start of commands we want to run for on every item in the list 
+rint_llm_response(task) - commands to repeat for each item on the list 
+indendation of 4 spaces 
+
+for task in list_of_tasks:
+    print(task)
+
+like this 
+
+Prioritising tasks with dictionaries and AI 
+Vanilla: Classic and creamy with a rich, smooth flavor from real vanilla beans
+Key: Value 
+curly braces to define contents of a dictionary 
+while creating a dictionary use curly braces 
+while acessing a specific element in the dictionary use square brackets 
+
+dictionaries can also map numbers and strings 
+isabel_facts = {
+    "age": 28,
+    "Favorite color": "red"
+}
+print(isabel_facts)
+
+if u wanna add on 
+isabel_facts["Cat names"] = ["Charlie", "Smokey", "Tabitha"]
+
+Comaparing Data in Python 
+Booleans are a data type that can take on only two values like outcomes of a coin toss like answering yes or no to true and false questions 
+
+Comparison Operators 
+isabel_age = 28
+daniel_age = 30
+tommy_age = 30
+
+print(isabel_age > daniel_age)
+Flase 
+
+print(isabel_age <= daniel_age)
+True 
+
+Equality Operator 
+Equality Operator
+So, what if you want to check if to things are equal? You would neeed to use ==.
+
+=is an assignment operator, it assigns values to variables
+== is a comparison operator, it checks if two things are holding the same value, or if two pieces of data are equal
+
+print(tommy_age == daniel_age)
+True 
+
+This operator works for strings too. Here you have definitive proof that a vegetarian is not the same as a vegan.
+
+print("vegetarian" == "vegan")
+False 
+
+Logical Operators
+Operations with booleans involve logical operators like and and or
+is_tommy_my_friend = True
+is_isabel_my_friend = True
+
+print(is_tommy_my_friend and is_isabel_my_friend)
+
+is_isabel_younger_than_tommy = isabel_age < tommy_age
+is_isabel_younger_than_daniel = isabel_age < daniel_age
+
+print(is_isabel_younger_than_tommy and is_isabel_younger_than_daniel)
+
+Helping AI make descisojns 
+
+Let's say that you have a task list with tasks that LLMs could assist you with. Each element in that list is a dictionary with two keys: the description for the task and the time_to_complete after the LLM's first pass.
+
+task["time_to_complete"] <= 5 
+True 
+
+task = task_list[2]
+if task["time_to_complete"] <= 5:
+    task_to_do = task["description"]
+    print_llm_response(task_to_do)
+task = task_list[3]
+if task["time_to_complete"] <= 5:
+    task_to_do = task["description"]
+    print_llm_response(task_to_do)
+1. Tofu
+2. Olives
+3. Vegetables (such as bell peppers, broccoli, and carrots)
+4. Soy sauce
+5. Olive oil
+6. Garlic
+7. Ginger
+8. Cornstarch
+9. Rice or noodles (optional)
+10. Sesame seeds (optional)
+
+control statements lets you define ways to react to conditions 
+
+In some cases, you may want to perform another action when the if condition is not met. 
+In those cases, you can use else. For instance, here Python will let you know that some of the tasks were not completed and will provide you with the time_to_complete information for those tasks.
+
+Module 3: Working with your own data and documents in python 
+
+Using files in python
+created a prompt to extract info from an email as an activity 
+
+prompt = f"""Extract countries from the following email. 
+List the countries.
+
+Email:
+{email}
+"""
+countries = get_llm_response(prompt)
+print(countries)
+
+Loading and using your own data 
+directory means folder 
+
+python looks for in the currrent working directory for files. By default, this is the folder where your python script is running from 
+
+# Open the email.txt file and print its contents
+f = open("email.txt", "r")
+email = f.read()
+f.close()
+
+print(email)
+
+upload_txt_file()  - to upload files 
+data stored in CSV format. Data of this type looks like a table with rows and columns, and is referred to by programmers as structured data.
+
+Extending Python with Packages and APIs 
+
+using functions from a local file 
+- from helper_functions import *
+
+Built in packages 
+packages contain functions that can be made available in your programs using the same import statements you learned in the last lesson.
+packages are a collection of functions for a specific set of tasks like doing maths and statistics 
+
+# Import from the math package the cos, sin and pi functions
+from math import cos, sin, pi
+
+Python also comes with a random package that generates random numbers and selects random elements from a list.
+
+scores = [28, 14, 15, 25, 21, 26, 30, 8, 36]
+
+# Write code to import the median function from the statistics package
+from statistics import median 
+
+ most popular Python third-party packages is called pandas.
+panel data from economics 
+
+So import pandas as pd creates a shortcut that you can use to avoid typing pandas.
+
+Installing packages 
+
+APIs to get data from the web 
+APIs are Application Programming Interfaces that let u ask another computer to give you data or carry out a service 
