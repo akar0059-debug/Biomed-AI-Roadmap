@@ -1,5 +1,4 @@
-Unit 1: AI Python for Beginners 
-
+AI Python for Beginners 
 Module 1: Basics of AI Coding
 
 How does programming give you an edge? 
@@ -239,3 +238,89 @@ Installing packages
 
 APIs to get data from the web 
 APIs are Application Programming Interfaces that let u ask another computer to give you data or carry out a service 
+
+
+
+
+
+
+
+SQL Foundations 
+Structured Query Language - for working with data in databases
+most common way you'll use it is by writing a piece of SQL code called a SQL Query — basically a request you send to a database asking for specific information. The database then responds by sending back exactly the results you asked for
+
+Database 
+Databases power nearly every application we use daily. When you browse a healthcare portal to view your test results, or use a hospital's patient management system — a database is working behind the scenes, storing and serving all that data instantly.
+SQL becomes a direct bridge between raw healthcare data and the insights that matter.
+relational database — data is organized into tables. Each table represents a specific type of entity or event.
+Spreadsheets are great for quick, manual analysis. Databases are built for large-scale, reliable, and automated data management.
+
+A database is a system for managing data that allows us to store data reliably, retrieve information efficiently, and manipulate data systematically
+Databases power web, mobile and other applications, as well as data analysis and reporting.
+Data in a database is organized into tables with rows and columns.
+Rows represent individual entities or events.
+Columns represent specific attributes or properties.
+
+Structured Query Language (SQL) is the most widely used programming language for working with data in databases.
+In its most common usage, you write SQL code to request data from databases, and they return the results you need.
+SQL is much simpler than general programming languages because it's designed for one specific purpose: working with data.
+
+SELECT *
+FROM (table name); - we use this code to see all coluns of the table or the whole table 
+What if you don't want to select all columns from a table? No problem. Just type the column name instead of the asterisk. If you want to get names of all users,
+If you want to get a couple of columns, give the names of the desired columns before FROM.
+Our table is quite small, so if we wanted to get some information about Volkswagens, we could select all rows and just ignore the extra few which contain other brands. But what if our table consisted of thousands of rows?
+SELECT *
+FROM user
+WHERE id = 100;
+
+There is one more very important conditional operator, the inequality sign (!= or sometimes <>). Look at the example:
+We can include even more conditions by using parentheses, according to our needs. If we want to find only those users who are above 70 years old or below 13 and who are at least 180 cm tall, we can use the following expression
+Now, what happens if we don't know precisely what letters we're looking for? With text values, you can always use the LIKE operator instead of the equality sign. What change does it make? Well, take a look at the following example:
+LIKE allows for the use of the percentage sign (%). The percentage sign applied in the example matches any number (zero or more) of unknown characters.
+
+the percentage sign (%) can be put anywhere between the single quotes and as many times as it's necessary - will select any user whose name contains at least one 'A'.
+Nice! Now, sometimes we may not remember just one letter of a specific name. Imagine we want to find a girl whose name is... Catherine? Katherine?
+The underscore sign (_) matches exactly one character. Whether it's Catherine or Katherine – the expression will return a row.
+
+In every row, there can be NULL values, i.e. fields with unknown, missing values. Remember the Opel from our table with its missing price? This is exactly a NULL value. We simply don't know the price.
+
+To check whether a column has a value, we use a special instruction IS NOT NULL
+Remember, NULL is a special value. You can't use the equal sign to check whether something is NULL. It simply won't work. The opposite of IS NOT NULL is IS NULL.
+NULL is a special value. It means that some piece of information is missing or unknown.
+If you set a condition on a particular column, say AGE < 70, the rows where age is NULL will always be excluded from the results. 
+Basic mathematic operators also included 
+
+Join tables on a condition 
+Take a closer look at how we provide the information about columns in the WHERE condition. If you have multiple tables, you should refer to specific columns by giving the name of the table and the column, separated by a dot (.). As a result, the column owner_id from the table car becomes car.owner_id and so on.
+
+
+As a result, we'll obtain all users whose name begins with the letter 'A'. We may not remember someone's exact name, but we know it begins with an A and that's enough.
+You can rename columns with AS 
+use ORDER BY for sorting rows 
+f you want to be precise and make things clear, however, you can use the keyword ASC (short for the ascending order) after the column name:
+DESC after the column name, which is short for the descending order. As a result, the highest values in the column total_sum will be shown first.
+you can sort your results by more than one column and each of them can be sorted in a different order:
+if there were many orders placed by the same customer, each customer id would be shown many times in the results. Not good. Fortunately, we can easily change this by using SELECT DISTINCT
+you can also use this function for columns 
+
+COUNT() calculates the number of rows specified in the parentheses.
+COUNT(*) basically means 'count all rows'. As a result, we'll just get the number of all rows in the table orders – and not their content.
+we can also add the keyword DISTINCT in our function COUNT():
+ count all rows which have a distinctive value in the column customer_id. In other words, this instruction tells us how many different customers have placed an order so far. If a customer places 5 orders, the customer will only be counted once.
+
+The function MIN(total_sum) returns the smallest value of the column total_sum. In this way, we can find the cheapest order in our table.
+The function AVG() finds the average value of the specified column.
+
+SUM() will find the total sum of all orders placed by the customer 
+ keyword HAVING and then stated the condition to filter the results. In this case, we only want to show those customers who, on individuals days, ordered goods with a total daily value of more than $2,000.
+
+LEFT JOIN works in the following way: it returns all rows from the left table (the first table in the query) plus all matching rows from the right table (the second table in the query).
+RIGHT JOIN works in the following way: it returns all rows from the right table (the second table in the query) plus all matching rows from the left table (the first table in the query).
+Another joining method is FULL JOIN. This type of JOIN returns all rows from both tables and combines the rows when there is a match. In other words, FULL JOIN is a union of LEFT JOIN and RIGHT JOIN.
+You can't, for example, put WHERE before FROM. Similarly, HAVING must always follow GROUP BY, not the other way around.
+LEFT JOIN, RIGHT JOIN, and FULL JOIN are also shortcuts. They are all actually OUTER JOINS: LEFT OUTER JOIN, RIGHT OUTER JOIN, and FULL OUTER JOIN. You can add the keyword OUTER and the results of your queries will stay the same.
+
+NATURAL JOIN and it's slightly different from the other methods because it doesn't require the ON clause with the joining condition - it always joins the two tables on the columns with the same name
+
+Subqueries - are queries inside queries 
