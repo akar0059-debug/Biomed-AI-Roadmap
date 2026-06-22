@@ -1,5 +1,5 @@
 # 👋 Hi, I'm Aditi Karthikeyan!
-### Biomedical Scientist | Aspiring AI Engineer 
+### Biomedical Scientist 
 
 ---
 
