@@ -324,3 +324,13 @@ LEFT JOIN, RIGHT JOIN, and FULL JOIN are also shortcuts. They are all actually O
 NATURAL JOIN and it's slightly different from the other methods because it doesn't require the ON clause with the joining condition - it always joins the two tables on the columns with the same name
 
 Subqueries - are queries inside queries 
+subqueries which are dependent on the main query - correlated subqueries.
+EXISTS is a new operator. It checks if there are any rows that meet the condition
+
+UNION combines the result of 2 or more queries 
+Both tables must have the same number of columns so that the results can be merged into one table. Makes sense, right? You should also remember that the respective columns must have the same kind of information: number or text.
+If one of your tables puts numbers in the column place (1, 2, 3) and the other puts texts ('first', 'second', 'third'), the trick won't work.
+
+By default, UNION removes duplicate rows. Luckily, we can change this. Just put UNION ALL instead of UNION in your query
+UNION gave you all the results from the first query PLUS the results from the second query. INTERSECT, on the other hand, only shows the rows which belong to BOTH tables.
+
